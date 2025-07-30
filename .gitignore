@@ -1,0 +1,73 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails and metadata
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Node modules (for WebStorm projects, if needed)
+node_modules/
+
+# Unity-specific
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Pp]rojectSettings/
+[Pp]ackages/manifest.json
+[Pp]ackages/packages-lock.json
+[Pp]ackages/packages-lock.json.meta
+.obj/
+.logs/
+
+# Unity generated files
+*.unityproj
+*.sln
+*.user
+*.userprefs
+
+# JetBrains Rider / WebStorm
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Rider/JetBrains specific
+*.sln.iml
+*.dotCover
+.idea/
+.idea_modules/
+.idea_workspace.xml
+.idea/*
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Git
+*.orig
+*.swp
+*.lock
+
+# Backup files
+*.bak
+*.tmp
+
+# Ignore exported packages
+*.unitypackage
+
+# Ignore Aseprite temp + backup files
+*.aseprite-backup
+*.ase
+
+# Ignore logs, crash reports, etc.
+*.log
+
+# Ignore system keychain temp files
+*.keychain
+*.keychain-db
