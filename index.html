@@ -1,60 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>🚁 Dust & Rotor Dashboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🚁 Dust & Rotor Dev Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #0f0f0f;
-      color: #e0e0e0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(180deg, #0d0d0d, #1a1a2e);
+      color: #f0f0f0;
+      font-family: 'Orbitron', sans-serif;
       margin: 0;
-      padding: 2rem;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      text-align: center;
     }
+
     h1 {
-      color: #ffcc00;
-    }
-    a {
-      display: inline-block;
-      margin: 0.5rem 1rem 0.5rem 0;
-      padding: 0.5rem 1rem;
-      background-color: #1e1e1e;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
-    }
-    a:hover {
-      background-color: #333;
-    }
-    iframe {
+      font-size: 3rem;
       margin-top: 2rem;
-      border: 1px solid #333;
+      margin-bottom: 1rem;
+      color: #ff00cc;
+      text-shadow: 0 0 10px #ff00cc, 0 0 20px #3333ff;
+    }
+
+    .neon-button {
+      display: inline-block;
+      padding: 16px 32px;
+      font-size: 20px;
+      color: #ffffff;
+      background: linear-gradient(135deg, #2e003e, #001f4d);
+      border: 2px solid #ffffff;
       border-radius: 8px;
+      text-decoration: none;
+      text-shadow: 0 0 5px #ffffff;
+      box-shadow:
+        0 0 10px #ff00cc,
+        0 0 20px #3333ff,
+        2px 2px 0px #000,
+        4px 4px 0px #ff00cc;
+      margin: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .neon-button:hover {
+      transform: translateY(-3px);
+      box-shadow:
+        0 0 20px #ff00cc,
+        0 0 40px #3333ff,
+        4px 4px 0px #000,
+        6px 6px 0px #ff00cc;
+    }
+
+    .dev-links {
+      margin-top: 40px;
+    }
+
+    .dev-links h2 {
+      font-size: 1.5rem;
+      color: #66ffff;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 5px #00ffff;
+    }
+
+    .gif-section {
+      margin-top: 60px;
+    }
+
+    .gif-section h2 {
+      font-size: 1.8rem;
+      color: #00ffcc;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 5px #00ffff;
+    }
+
+    .gif-section img {
+      width: 150px;
+      height: auto;
+      image-rendering: pixelated;
+      border: 2px solid #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 15px #00ffff;
+    }
+
+    .gif-section p {
+      color: #cccccc;
+      margin-top: 0.5rem;
+      font-size: 1rem;
     }
   </style>
 </head>
 <body>
-  <img src="./FirstAttemptAtTopRotor.gif" alt="Spinning Rotor" class="rotor" />
-<h1>🚁 Dust & Rotor Dev Hub</h1>
-<p><strong>Working Title:</strong> Dust & Rotor</p>
+  <h1>🚁 Dust & Rotor Dev Hub</h1>
+  <a href="https://www.notion.so/Dust-Rotor-Dev-Board-241c535675e3802aa45ae5c2c6c59a7f?source=copy_link" target="_blank" class="neon-button">
+    🚀 View Notion Dev Board
+  </a>
 
-<div class="links">
-    <a href="https://chat.openai.com" target="_blank">💬 ChatGPT</a>
-    <a href="https://github.com/nate-henderson/DustAndRotor2025" target="_blank">📂 GitHub Repo</a>
-    <a href="https://trello.com/b/O1EOw8CO/🚁-dust-rotor" target="_blank">📋 Trello Board</a>
-    <a href="https://docs.unity3d.com/Manual/index.html" target="_blank">🧠 Unity Manual</a>
-    <a href="https://aseprite.org/docs/" target="_blank">🎨 Aseprite Docs</a>
-</div>
-  <div>
-<iframe
-  src="https://www.notion.so/Dust-Rotor-Dev-Board-241c535675e3802aa45ae5c2c6c59a7f?source=copy_link" 
-  style="width:100%; height:900px; border:none; border-radius:8px;"
-  allowfullscreen>
-</iframe>
+  <div class="dev-links">
+    <h2>Dev Shortcuts</h2>
+    <a href="https://github.com/nate-henderson/DustAndRotor2025" target="_blank" class="neon-button">💻 GitHub Repo</a>
+    <a href="https://chat.openai.com" target="_blank" class="neon-button">🤖 ChatGPT</a>
+    <a href="https://docs.unity3d.com/Manual/index.html" target="_blank" class="neon-button">📘 Unity Manual</a>
+    <a href="https://www.aseprite.org/docs/" target="_blank" class="neon-button">🎨 Aseprite Docs</a>
+  </div>
 
-    
-https://www.notion.so/Dust-Rotor-Dev-Board-241c535675e3802aa45ae5c2c6c59a7f?source=copy_link
-      </div>
+  <div class="gif-section">
+    <h2>🎉 First Prop Animation!</h2>
+    <img src="FirstAttemptAtTopRotor.gif" alt="Animated Helicopter Rotor" />
+    <p>My first self-guided sprite animation — made with love and pixel dust ✨</p>
+  </div>
 </body>
 </html>
